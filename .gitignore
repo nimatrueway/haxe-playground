@@ -1,0 +1,4 @@
+bin
+.vscode
+.haxelib
+.DS_Store
