@@ -1,3 +1,4 @@
+import haxe.Exception;
 import haxe.Log;
 import haxe.Json;
 
@@ -14,5 +15,11 @@ class HelloWorld {
 		final num = 999999999;
 		var name = ' My number: ${num} '.trim();
 		Log.trace(name);
+
+		test();
+	}
+
+	static function test() {
+		throw new Exception("Boom boom!");
 	}
 }
